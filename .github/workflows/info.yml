@@ -1,19 +1,19 @@
-name: info
+# name: info
 
-on: push
+# on: push
 
-jobs:
-  info:
-    runs-on: ubuntu-latest
-    steps:
-      - name: hostname
-        run: hostname
+# jobs:
+#   info:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: hostname
+#         run: hostname
 
-      - name: gebruiker
-        run: whoami
+#       - name: gebruiker
+#         run: whoami
 
-      - name: OS
-        run: uname -a
+#       - name: OS
+#         run: uname -a
 
-      - name: inhoud van de werkmap
-        run: ls -la
+#       - name: inhoud van de werkmap
+#         run: ls -la
