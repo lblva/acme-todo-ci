@@ -7,7 +7,7 @@ async function startApp(t) {
   const server = createApp(createStore()).listen(0, '127.0.0.1');
   t.after(() => server.close());
   await new Promise((resolve) => server.once('listening', resolve));
-  return `http://127.0.0.1:${server.address().port}/api/todos`;
+  return `http://127.0.0.1:${server.address().port}/api/todos`; 
 }
 
 test('POST /api/todos maakt een todo aan', async (t) => {
