@@ -1,6 +1,6 @@
 const http = require('node:http');
 
-function readJson(req) {
+function readJson(req) 
   return new Promise((resolve, reject) => {
     let body = '';
     req.on('data', (chunk) => {
